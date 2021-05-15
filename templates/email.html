@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/sty.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="main.js"></script>
+</head>
+<style>
+*
+{
+ 
+    margin: 0;
+    padding: 0:
+ 
+}
+body
+{
+    background-color: #efefef;
+    font-family: sans-serif;
+ 
+ 
+}
+.contact-box
+{
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%.-50%);
+    position: absolute;
+ 
+}
+form 
+{
+ 
+    margin: 35px;
+ 
+}
+.input-field
+{
+ 
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+ 
+ 
+}
+.textarea-field
+{
+   height: 150px;
+   padding-top: 10px;
+ 
+ 
+ 
+}
+.btn
+{
+   border-radius: 20px;
+   color: #fff;
+   margin-top: 18px;
+   padding: 10px;
+   background-color: #47c35a;
+   font-size:12px;
+   border: none;
+   cursor: pointer;
+ 
+}
+</style>
+<body>
+<br></br>
+<br></br>
+ <a type="button" class="btn" id="donate" href="/usr">DASHBOARD</a>
+    <div class="contact-box" >
+   
+        <form action="/email" method="POST" >
+            <div class="msg">{{ msg }}</div>
+                <input type="text" class="input-field" id="username" name="username" placeholder="enter username" required>
+                <input type="email" class="input-field" id="email" name="email" placeholder="enter your email id" required >
+                <input type="text" class="input-field" id="sub" name="sub" placeholder="enter subject" >
+                <textarea type="email" class="input-field textarea-field" id="tes" name="tes" placeholder="your message" required ></textarea>
+               <button type="submit" id="button" class="btn" href="/usr"> send </button>
+            </form>
+            </div>
+           
+</body>
+
+</html>

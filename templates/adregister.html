@@ -1,0 +1,149 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>ADMIN//REG</title>
+                                <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+                                <style>body {
+    background-color: rgb(93, 28, 139)
+}
+
+input {
+    border: none;
+    outline: none
+}
+
+.container {
+    border-radius: 15px
+}
+
+@media(min-width:992px) {
+    img {
+        width: 500px;
+        height: 500px
+    }
+
+    #circle {
+        border: 10px solid rgba(255, 0, 234, 0.945);
+        border-radius: 50%;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        left: 290px;
+        top: -25px
+    }
+
+    .container {
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255) 80%, rgb(242, 242, 253), rgb(164, 164, 235))
+    }
+}
+
+@media(max-width:991px) {
+    img {
+        display: none
+    }
+
+    #circle {
+        border: 10px solid rgba(255, 0, 234, 0.945);
+        border-radius: 50%;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        left: 100px;
+        top: -25px
+    }
+
+    .container {
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255) 80%, rgb(242, 242, 253), rgb(164, 164, 235))
+    }
+}
+
+@media(max-width:768px) {
+    img {
+        display: none
+    }
+
+    #circle {
+        border: 10px solid rgba(255, 0, 234, 0.945);
+        border-radius: 50%;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        left: 302px;
+        top: -29px
+    }
+}
+
+@media(max-width:567px) {
+    img {
+        display: none
+    }
+
+    .container {
+        margin-left: 0px;
+        margin-top: 30px
+    }
+
+    #circle {
+        border: 10px solid rgba(255, 0, 234, 0.945);
+        border-radius: 50%;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        left: 202px;
+        top: -29px
+    }
+}</style>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+                                <script type='text/javascript'></script>
+                            </head>
+                            <body oncontextmenu='return false' class='snippet-body'>
+                            
+                            <div class="container bg-white pb-5">
+    <div class="row d-flex justify-content-start align-items-center mt-sm-5">
+        <div class="col-lg-5 col-10">
+            <div id="circle"></div>
+            
+            <div class="pb-5"> 
+            <img src="https://img.freepik.com/free-vector/authentication-concept-illustration_114360-2168.jpg?size=338&ext=jpg&ga=GA1.2.777073396.1599399655" alt=""> 
+            </div>
+        </div>
+        <div class="col-lg-4 offset-lg-2 col-md-6 offset-md-3">
+        <div class="row donate-sponsor" >
+                <a type="button" class="btn btn-success mr-1" id="donate" href="login">USER LOGIN</a>
+               
+             
+              </div>
+            <div class="pt-4">
+                <h6><span class="fa fa-superpowers text-primary px-md-2"></span>ADMIN REGISTER</h6>
+            </div>
+           <div class="logo mt-3 text-center">
+        
+    </div>
+      <!-- navbar ends -->
+    <!-- Login form -->
+    <div class="login text-center mt-5"> 
+        <h2> SIGN UP</h2>
+        <form action="/adregister" method="post">
+        <div class="msg">{{ msg }}</div>
+            <input type="text" name="username" placeholder="Enter Your Username"  id="username" required></br></br>
+			<input type="email" name="email" placeholder="Enter Your Email ID"  id="email" required></br></br>
+			<input type="password" name="password" placeholder="Enter Your Password" id="password" required></br></br>
+			 <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> accept terms and condition</label> 
+            </br>
+            </br>
+        <button type="submit" id="button" class="btn btn-primary"> Register </button>
+        </form>
+    </div>
+
+    <div class="note mt-3 text-center"> <!--Register form -->
+    <p> already have an account ? please login  <a href="/admin">login! </a> </p>
+    </div>
+        </div>
+    </div>
+</div>
+                            </body>
+                        </html>
