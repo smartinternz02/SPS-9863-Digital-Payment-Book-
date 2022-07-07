@@ -12,9 +12,9 @@ app.secret_key = 'a'
 
   
 app.config['MYSQL_HOST'] = 'remotemysql.com'
-app.config['MYSQL_USER'] = '9zWgPLb2Rp'
-app.config['MYSQL_PASSWORD'] = '1mK6N4mc36'
-app.config['MYSQL_DB'] = '9zWgPLb2Rp'
+app.config['MYSQL_USER'] = '    '
+app.config['MYSQL_PASSWORD'] = '     '
+app.config['MYSQL_DB'] = '   '
 mysql = MySQL(app)
 @app.route('/')
 
