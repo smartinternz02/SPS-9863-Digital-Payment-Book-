@@ -8,7 +8,7 @@ def sendmail(TEXT,email,SUBJECT):
     s.starttls()
     s.login("memail", "pass")
     message  = 'Subject: {}\n\n{}'.format(SUBJECT, TEXT)
-    s.sendmail("mdhvsnair@gmail.com", email, message)
+    s.sendmail("emailr@gmail.com", email, message)
     s.quit()
 
 
